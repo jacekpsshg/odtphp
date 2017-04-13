@@ -2,6 +2,8 @@
 
 namespace Odtphp;
 
+use Odtphp\Exceptions\OdfException;
+use Odtphp\Exceptions\SegmentException;
 use Odtphp\SegmentIterator;
 
 /**
