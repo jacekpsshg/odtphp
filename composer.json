@@ -1,5 +1,5 @@
 {
-    "name": "cybermonde/odtphp",
+    "name": "silksoftwarehouse/odtphp",
     "description": "ODT document generator",
     "keywords": [
         "odt",
@@ -30,7 +30,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.0-dev"
+            "dev-master": "2.0.1-dev"
         }
     }
 }
