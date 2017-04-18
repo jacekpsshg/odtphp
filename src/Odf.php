@@ -129,7 +129,7 @@ class Odf
      */
     public function setImage($key, $value, $page = -1, $width = null, $height = null, $offsetX = null, $offsetY = null)
     {
-        $filename = strtok(strrchr($value, '/'), '/.');
+        $filename = uniqid() . strtok(strrchr($value, '/'), '/.');
         $file = substr(strrchr($value, '/'), 1);
         $size = @getimagesize($value);
         if ($size === false) {
