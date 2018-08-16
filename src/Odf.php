@@ -380,11 +380,11 @@ IMG;
 
 
     public function removeElement($elementTagName){
-        $this->contentXml = preg_replace('/\[' . $elementTagName . '\](.*)\[\/' . $elementTagName . '\]/', '', $this->contentXml);
+        $this->contentXml = preg_replace('/\{' . $elementTagName . '\}(.*)\{\/' . $elementTagName . '\}/', '', $this->contentXml);
     }
     
     public function removeRemovableTag($elementTagName){
-        $this->contentXml = preg_replace('/\[' . $elementTagName . '\]/', '', $this->contentXml);
-        $this->contentXml = preg_replace('/\[\/' . $elementTagName . '\]/', '', $this->contentXml);
+        $this->contentXml = preg_replace('/\{' . $elementTagName . '\}/', '', $this->contentXml);
+        $this->contentXml = preg_replace('/\{\/' . $elementTagName . '\}/', '', $this->contentXml);
     }
 }
